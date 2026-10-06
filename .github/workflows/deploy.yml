@@ -26,8 +26,8 @@ jobs:
       - run: npm ci
       - run: npm run build
         env:
-          VITE_BASE: /kuriha/
-          VITE_SITE_URL: https://home-of-creativity.github.io/kuriha
+          VITE_BASE: /kuriha-v2/
+          VITE_SITE_URL: https://home-of-creativity.github.io/kuriha-v2
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
           VITE_GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
       - uses: actions/upload-pages-artifact@v3
